@@ -10,7 +10,7 @@ public class Ejercicio15 {
       num1.close();
 
       for (int i=1;i<=exponente;i++){
-        System.out.print(base +" elevado a " +i );
+        System.out.print(base +" elevado a " + s.append('\u207b') );
       }
 
       
