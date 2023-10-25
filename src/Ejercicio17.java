@@ -10,7 +10,7 @@ public class Ejercicio17 {
         int numeroxd=0;
         
         if (numero>=0){
-        for (int i=numero;i<=numero+100;i++){
+        for (int i=numero;i<numero+100;i++){
           numeroxd=numeroxd+i;
 
         }

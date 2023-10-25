@@ -8,9 +8,10 @@ public class Ejercicio15 {
       System.out.print("Introduce el exponente: ");
       int exponente=num1.nextInt();
       num1.close();
-
+      int base_fija=base;
       for (int i=1;i<=exponente;i++){
-        System.out.print(base +" elevado a " + s.append('\u207b') );
+        System.out.println(base_fija +" elevado " + i +" = " +base);
+        base=base*base_fija;
       }
 
       
