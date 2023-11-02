@@ -1,64 +1,44 @@
 
 public class Ejercicio37 {
-    
+
   public static int pedirnum(){
-    System.out.print("Introduce un numero: ");
+    System.out.print("Introduzca el numero: ");
     int numero=Integer.parseInt(System.console().readLine());
     if (numero<0){
-      return 5/0;
-    }else{
-     return numero;
-    }
-    
+      int exit=1/0;
+      return exit;
+    }else return numero;
   }
-  
-  public static int cambiosentido(int numero){
 
+  public static int numeroseparado(int numero){
     int largo=Integer.toString(numero).length();
-    int almacenaje=0;
     
     int largo2=1;
-    for (int b=1;b<=largo-1;b++){
+    for(int a=1;a<=largo-1;a++){
       largo2=largo2*10;
     }
 
     for (int i=1;i<=largo;i++){
+
       
-      if (numero/10<10)
-      almacenaje=almacenaje+(numero/10)*largo2;
-      largo2=largo2/10;
-      numero=numero%10;
+
+        
+        System.out.print(numero/largo2 );
       
+        numero=numero%largo2;
+        largo2=largo2/10;
+
     }
-    return almacenaje;
-  }
+    return 0;
 
-  public static boolean pruebacapicua(int numero, int numeroreverso){
-
-    if (numero!=numeroreverso){
-      return false;
-    }else return true;
-    
   }
 
   public static void main(String[] args) throws Exception {
-  try {
-    
-  
-    
-    int numero=pedirnum();
-    int numeroreverso=cambiosentido(numero);
-    boolean capicua=pruebacapicua(numero, numeroreverso);
-  
-    if (capicua==true){
-      System.out.printf("El numero %d que al reves es %d es capicua",numero,numeroreverso);
-    }else if (capicua!=true){
-      System.out.printf("El numero %d que al reves es %d no es capicua",numero,numeroreverso);
-    }
-  
+  int numero=pedirnum();
+  int numeroseparado=numeroseparado(numero);
 
-    } catch (Exception e) {
-    System.out.println("Error inesperado");
-  }
+
+
+
     }
 }

@@ -49,7 +49,6 @@ public class Ejercicio32 {
   int numpositivo=pedirnum();
   int largonumero=medirnum(numpositivo);
   int bucle=buclenumero(numpositivo, largonumero);
-  
    } catch (Exception e) {
     System.out.println("Error inesperado");
   }

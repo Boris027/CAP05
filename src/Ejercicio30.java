@@ -41,6 +41,14 @@ public class Ejercicio30 {
 
   public static int diferenciahoraria(int Dia, int hora, int Dia2, int hora2){
     int contador=0;
+    int contenedor=hora2;
+    if (Dia2==Dia && hora2<hora){
+      hora2=hora;
+      hora=contenedor;
+    }
+    
+
+
     for (int i=Dia;i<=Dia2;i++){
       if (i==Dia2){
         for (int j=hora+1;j<=hora2;j++){
@@ -73,6 +81,8 @@ public class Ejercicio30 {
     String Dia_2=System.console().readLine();
     int Dia2=calculardia(Dia_2);
     int hora2=pedirhora();
+
+    
     
     
     //permitir que el segundo dia sea mas grande que el primero
