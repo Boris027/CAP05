@@ -40,7 +40,15 @@ public class Ejercicio45 {
       numero=numero%largo2;
       largo2=largo2/10;
     }
-    System.out.printf("El resultado final es el %d%d",contenedor1,contenedor2);
+    System.out.printf("El resultado final es el %d%d%n",contenedor1,contenedor2);
+
+    //mismo resultado pero en numero
+    /*String numerouwu=Integer.toString(contenedor1);
+    String numerouwu2=Integer.toString(contenedor2);
+    String numerofinal=(numerouwu+numerouwu2);
+    int numeroentero=Integer.parseInt(numerofinal);
+    System.out.println(numeroentero+1);*/
+    
   }
 
   

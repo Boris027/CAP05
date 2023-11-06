@@ -36,7 +36,8 @@ public class Ejercicio44 {
       numero=numero%largo2;
       largo2=largo2/10;
     }
-    System.out.printf("El resultado final es el %d%d%d",contenedor1,insertar,contenedor2);
+    System.out.printf("El resultado final es el %d%d%d%n",contenedor1,insertar,contenedor2);
+    
   }
 
   

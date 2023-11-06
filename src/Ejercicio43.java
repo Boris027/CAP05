@@ -36,6 +36,7 @@ public class Ejercicio43 {
       numero=numero%largo2;
       largo2=largo2/10;
     }
+    contenedor2=contenedor2/10;
     System.out.printf("Los numeros partidos son el %d y el %d",contenedor1,contenedor2);
   }
 
@@ -47,6 +48,7 @@ public class Ejercicio43 {
   
     System.out.print("Introduce un numero: ");
     int numero=pedirnum();
+    numero=numero*10+1;
     System.out.print("Introduce la posicion a partir de la cual dividir el numero: ");
     int partir=pedirnum();
     int largo=Integer.toString(numero).length();
