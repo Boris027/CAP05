@@ -62,9 +62,9 @@ public class Ejercicio65 {
     if(altura<3){
       altura=altura/0;
     }
-    System.out.print("Introduzca la fila del palito horizontal (entre 2 y 6): ");
+    System.out.print("Introduzca la fila del palito horizontal (entre 2 y "+(altura-1) +"): ");
     int palito=pedirnum();
-    if(palito<2 || palito>6 || palito==altura || palito==1 ){
+    if(palito<2 || palito>altura || palito==altura || palito==1 ){
       altura=altura/0;
     }
     piramide(altura,palito);
